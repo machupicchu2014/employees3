@@ -1,8 +1,8 @@
 <template>
 <div class="about">
 <h2>Welcome!</h2>
-<p>Employee Manager 2.0 is the best Employee Management Software available on the market today. And,
-  the best part is, it's free! Through the magic of Vue and Node, you can easily add all your employees to
+<p>Employee Manager 3.0 is the best Employee Management Software available on the market today. And,
+  the best part is, it's free! Through the magic of Vue, Node, and SQL, you can easily add all your employees to
   this highly secure database!</p>
   <br>
   <h2>Login:</h2>
@@ -44,13 +44,20 @@ export default {
         this.registerName = '';
         this.registerUser = '';
         this.registerPassword = '';
+      }).catch(err => {
+        window.alert("Register Error.");
       })
     },
     login: function() {
       this.$store.dispatch('login', {
         username: this.loginUser,
         password: this.loginPassword,
-      });
+      }).then(user =>{
+        this.loginUser = '';
+        this.loginPassword = '';
+      }).catch(err => {
+        window.alert("Invalid Credentials.");
+      })
     }
   }
 }
