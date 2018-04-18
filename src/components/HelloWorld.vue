@@ -66,6 +66,7 @@ export default {
 
 .about {
   text-align: center;
+  margin-top:100px;
 }
 
 .features p{

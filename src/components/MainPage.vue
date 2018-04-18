@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="stuff">
   <employee-list v-if="loggedIn"/>
   <hello-world v-else/>
   </div>

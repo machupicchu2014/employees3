@@ -42,7 +42,12 @@ nav ul{
   text-align: center;
 
 }
-
+.header{
+  font-size: 20px;
+  font-family: 'Kaushan Script', cursive;
+  float: left;
+  font-weight: bold;
+}
 nav li {
   color: white;
   display: inline-block;
@@ -51,6 +56,11 @@ nav a{
   padding: 10px;
   text-decoration: none;
   color: white;
+}
+
+.rightlink{
+    float: right;
+    margin-right: 10px;
 }
 
 nav li a:hover{

@@ -2,6 +2,9 @@
   <div id="app">
     <nav-bar/>
     <router-view/>
+    <footer>
+      <p>Copyright yesterday. Check out my <a href="https://github.com/machupicchu2014/employees3">github.</a></p>
+    </footer>
   </div>
 </template>
 
@@ -21,5 +24,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  background-color: #EBEBEB;
+  margin-top: 20px;
+}
+
+footer p{
+  margin-top: 20px;
 }
 </style>
